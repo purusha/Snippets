@@ -1,7 +1,3 @@
-
-ho to check if an ActorSelection exist ?
-------------------------------------------------------
-
 import java.util.concurrent.TimeUnit;
 
 import scala.concurrent.Await;
@@ -17,6 +13,7 @@ import akka.pattern.AskableActorSelection;
 import akka.util.Timeout;
 
 public class AskTest {
+
   public static void main(String[] args) throws Exception{
     ActorSystem sys = ActorSystem.apply("test");
     sys.actorOf(Props.create(TestActor.class), "mytest");
